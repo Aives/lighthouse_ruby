@@ -15,7 +15,7 @@ user_input = ""
 #until user_input == "go away"
 while user_input != "go away"
   print "Shakil walks up to you and you say: "
-  user_input = gets.chomp
+  user_input = gets.chomp.downcase
 
   if user_input == "woof"
     puts "WOOF WOOF WOOF"
@@ -27,3 +27,5 @@ while user_input != "go away"
     puts "*shakil waits quietly for a treat*"
   end
 end
+
+#.include? "treat"
